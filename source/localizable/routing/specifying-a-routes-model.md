@@ -39,8 +39,6 @@ You will then be able to access the controller's `model` property in your templa
 {{/each}}
 ```
 
-Please note that, if you use [Ember Data](../../models/), you should set up your [relationships](../../models/relationships) properly instead of relying on RSVP.hash to fetch them.
-
 ## Dynamic Models
 
 Some routes always display the same model. For example, the `/photos`
@@ -165,3 +163,5 @@ each record in the song model and album model:
   {{/each}}
 </ul>
 ```
+
+If you use [Ember Data](../../models/) and you are building an `RSVP.hash` with the model's relationship, consider instead properly setting up your [relationships](../../models/relationships) and letting Ember Data take care of loading them.
